@@ -1,0 +1,29 @@
+[
+{
+  "model": "Academica.faculty",
+  "pk": "10",
+  "fields": {
+    "faculty_name": "Engineering Faculty",
+    "faculty_description": "Faculty",
+    "faculty_image": "faculties/foto.png"
+  }
+},
+{
+  "model": "Academica.faculty",
+  "pk": "20",
+  "fields": {
+    "faculty_name": "Desing",
+    "faculty_description": "Design",
+    "faculty_image": "faculties/Marcela.png"
+  }
+},
+{
+  "model": "Academica.faculty",
+  "pk": "30",
+  "fields": {
+    "faculty_name": "Artes",
+    "faculty_description": "No aplica",
+    "faculty_image": ""
+  }
+}
+]
