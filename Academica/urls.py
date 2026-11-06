@@ -1,6 +1,18 @@
+from django.contrib import admin
 from django.urls import path
-from Academica import views
+from django.conf import settings
+from django.conf.urls.static import static
+from Academica.views import listaFacultades,listaDepartamentos
+
 
 urlpatterns = [
-    path('', views.listaFacultades, name ='listaFacultades')
+    path('admin/', admin.site.urls),
+    path('facultades/', listaFacultades,  name='listado_facultades'),
+    path('departamentos/', listaDepartamentos,  name='listado_departamentos')
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(
+        settings.MEDIA_URL,
+        document_root=settings.MEDIA_ROOT
+    )
